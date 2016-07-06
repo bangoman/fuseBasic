@@ -1,0 +1,6 @@
+#profile .header {
+  background: url("../assets/dgb_images/background.jpg") no-repeat 0 45%;
+}
+#profile .about-tab .about-sidebar .groups .content .group .logo {
+    width: 64px;
+}
