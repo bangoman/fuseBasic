@@ -10,9 +10,9 @@
             function sendMessageModalCtl($scope, $mdDialog) {
                 var vm = this;
 
-                vm.hide = function() {
-                    $mdDialog.hide();
-                };
+                // vm.hide = function() {
+                //     $mdDialog.hide();
+                // };
                 vm.cancel = function() {
                     $mdDialog.cancel();
                 };
