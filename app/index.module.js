@@ -12,10 +12,10 @@
             'app.core',
 
             // Navigation
-            //'app.navigation',
+            'app.navigation',
 
             // Toolbar
-            //'app.toolbar',
+            'app.toolbar',
 
             // Quick panel
             'app.quick-panel',
