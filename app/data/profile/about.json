@@ -37,26 +37,52 @@
                 "mail@creapond.com"
             ]
         },
-        "groups": [
+        "clientTechs": [
             {
                 "logo": "assets/dgb_images/logo_angular.jpg",
                 "name": "Angular",
-                "category": "Applications dynamic structures",
-                "members": "1.856.546"
+                "category": "Applications dynamic structures"
+            },
+            {
+                "logo": "assets/dgb_images/logo_og.png",
+                "name": "ReactJs",
+                "category": "Javascript Framework"
             },
             {
                 "logo": "assets/dgb_images/logo_ionic.png",
                 "name": "Ionic",
-                "category": "Mobile first Web apps",
-                "members": "1.226.121"
+                "category": "Mobile first Web apps"
             },
             {
                 "logo": "assets/dgb_images/logo_bootstrap.jpg",
                 "name": "Bootstrap",
-                "category": "Responsive User Interface",
-                "members": "526.142"
+                "category": "Responsive User Interface"
             }
+
+
+
         ],
+        "serverTechs": [
+            {
+                "logo": "assets/dgb_images/nodejs-logo-square.jpg",
+                "name": "Node Js",
+                "category": "Javascript Server"
+            },
+            {
+                "logo": "assets/dgb_images/codeigniter-logo.png",
+                "name": "Codigniter",
+                "category": "PHP Mvc Framework"
+            },
+            {
+                "logo": "assets/dgb_images/mongodb-logo.png",
+                "name": "MongoDb",
+                "category": "No Sql Database"
+            }
+
+
+        ],
+
+
         "friends": [
             {
                 "name": "Garry Newman",
