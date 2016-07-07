@@ -4,19 +4,21 @@
             <div class="md-toolbar-tools">
                 <h2>Leave Us A Message</h2>
                 <span flex></span>
-                <md-button class="md-icon-button" ng-click="cancel()">
-                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                <md-button class="md-icon-button" ng-click="vm.cancel()">
+                    <md-icon md-svg-src="assets/dgb_images/ic_clear_white_24px.svg" aria-label="Close dialog"></md-icon>
                 </md-button>
           </div>
       </md-toolbar>
       <md-dialog-content>
           <div class="md-dialog-content">
               <md-input-container class="md-block">
-                  <label>Description</label>
-                  <input md-maxlength="30" required md-no-asterisk name="description" ng-model="project.description">
-                  <div ng-messages="projectForm.description.$error">
-                      <div ng-message="required">This is required.</div>
-                      <div ng-message="md-maxlength">The name has to be less than 30 characters long.</div>
+                  <label>Sender Email</label>
+                  <input required type="email" name="clientEmail" ng-model="project.clientEmail"
+               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                  <div ng-messages="projectForm.clientEmail.$error" role="alert">
+                      <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                        Your email must be between 10 and 100 characters long and look like an e-mail address.
+                      </div>
                   </div>
               </md-input-container>
               <md-input-container class="md-block">
