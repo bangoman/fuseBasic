@@ -107,7 +107,12 @@
             {
                 "name": "Dani Cohen",
                 "avatar": "assets/dgb_images/danny.jpg"
+            },
+            {
+                "name": "Ben Noach",
+                "avatar": "assets/dgb_images/ben.jpg"
             }
+
         ]
     }
 }
