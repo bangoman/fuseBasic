@@ -6,3 +6,9 @@
 #profile .about-tab .about-sidebar .groups .content .group .logo {
     width: 64px;
 }
+
+@media screen and (max-width: 768px ) {
+    #profile .header {
+      background-size: 768px auto;
+    }
+}
