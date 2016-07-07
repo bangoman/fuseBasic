@@ -155,6 +155,34 @@
                 </div>
             </div>
         </div>
+        <div class="profile-box groups md-whiteframe-1dp" layout="column">
+            <header class="md-accent-bg" layout="row" layout-align="space-between center">
+                <div class="title" >Mobile Technologies</div>
+                <div class="more secondary-text">
+                    <span translate="PROFILE.SEE">See</span>
+                    <span>6</span>
+                    <span translate="PROFILE.MORE">More</span>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="group" ng-repeat="tech in vm.about.serverTechs" layout="row"
+                     layout-align="space-between center">
+                    <div layout="row" layout-align="start center">
+                        <img ng-src="{{tech.logo}}" class="logo" alt="{{tech.name}}"/>
+
+                        <div>
+                            <div class="name">{{tech.name}}</div>
+                            <div class="category">{{tech.category}}</div>
+                        </div>
+                    </div>
+                    <md-button class="md-icon-button" aria-label="more" translate
+                               translate-attr-aria-label="PROFILE.MORE">
+                        <md-icon md-font-icon="icon-dots-vertical"></md-icon>
+                    </md-button>
+                </div>
+            </div>
+        </div>
 
     </div>
 
