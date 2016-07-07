@@ -7,8 +7,18 @@
     width: 64px;
 }
 
+#send-massage-modal {
+    width: 64%;
+    min-width: 320px;
+    max-width: 720px;
+}
+
+
+
+
 @media screen and (max-width: 768px ) {
     #profile .header {
       background-size: 768px auto;
     }
 }
+

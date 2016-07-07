@@ -19,27 +19,14 @@
 
         // Methods
 
-
         vm.showSendMessage = function(ev) {
-            var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
             $mdDialog.show({
                 controller: 'sendMessageModalCtl as vm',
                 templateUrl: 'app/main/pages/profile/sendMessageModal.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
-                clickOutsideToClose:true,
-                fullscreen: useFullScreen
+                clickOutsideToClose:true
             })
-            .then(function(answer) {
-                vm.status = 'You said the information was "' + answer + '".';
-            }, function() {
-                vm.status = 'You cancelled the dialog.';
-            });
-            $scope.$watch(function() {
-                return $mdMedia('xs') || $mdMedia('sm');
-            }, function(wantsFullScreen) {
-                vm.customFullscreen = (wantsFullScreen === true);
-            });
         };
         //////////
     }

@@ -1,5 +1,4 @@
 
-
 (function ()
 {
     'use strict';
@@ -10,14 +9,13 @@
             function sendMessageModalCtl($scope, $mdDialog) {
                 var vm = this;
 
-                // vm.hide = function() {
-                //     $mdDialog.hide();
-                // };
+
                 vm.cancel = function() {
                     $mdDialog.cancel();
                 };
-                vm.answer = function(answer) {
-                    $mdDialog.hide(answer);
+                vm.send = function() {
+                    $mdDialog.hide();
                 };
+
             }
 })();
