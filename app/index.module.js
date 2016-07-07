@@ -21,7 +21,7 @@
             'app.quick-panel',
 
             // Sample
-            //'app.sample',
+            'app.sample',
 
             //profile
             'app.pages.profile'
